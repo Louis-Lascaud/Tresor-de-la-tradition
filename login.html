@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Espace de dépôt</title>
+</head>
+
+
+<body>
+<form>
+    <label for="pswd">Entrer le mot de passe : </label>
+    <input type="password" id="pswd">
+    <input type="button" value="Submit" onclick="checkPswd();" />
+</form>
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "admin";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="cryptedspace.html";
+        }
+        else{
+            alert("Mot de passe incorrect.");
+        }
+    }
+</script>
+</body>
+</html>
