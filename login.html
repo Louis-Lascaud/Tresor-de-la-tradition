@@ -5,15 +5,17 @@
 
 
 <body>
+	<center>
 <form>
     <label for="pswd">Entrer le mot de passe : </label>
     <input type="password" id="pswd">
-    <input type="button" value="Submit" onclick="checkPswd();" />
+    <input type="button" value="Soumettre" onclick="checkPswd();" />
 </form>
-<!--Function to check password the already set password is admin-->
+</center>
+<!--Function to check password the already set password is right-->
 <script type="text/javascript">
     function checkPswd() {
-        var confirmPassword = "admin";
+        var confirmPassword = "iloveclapier";
         var password = document.getElementById("pswd").value;
         if (password == confirmPassword) {
              window.location="cryptedspace.html";
