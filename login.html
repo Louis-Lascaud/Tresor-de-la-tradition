@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/ico" href="Images/logo.ico"/>
+	<title>Espace de dépôt</title>
+</head>
+
+
+<body>
+
+    <body style="background-color:#F9E5AD;"></body>
+    <FONT face="Avenir Next LT Pro">
+    <div id=contenu>
+	<center>
+<span><form>
+    <label for="pswd">Entrer le mot de passe : </label>
+    <input type="password" id="pswd">
+    <input type="button" value="Soumettre" onclick="checkPswd();" />
+</form></span>
+</center>
+</div>
+
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "iloveclapier";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="Espace (emg).html";
+        }
+        else{
+            alert("Mot de passe incorrect.");
+        }
+    }
+</script>
+
+
+</body>
+</html>
