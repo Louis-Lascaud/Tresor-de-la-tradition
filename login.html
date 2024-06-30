@@ -19,26 +19,25 @@
   position: relative;
 }
 
-.vertical-center {
+.center {
   margin: 0;
   position: absolute;
   top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 </style>
 
 <div class="container">
-  <div class="vertical-center">
+  <div class="center">
 
-	<center>
     <form>
     <label for="pswd">Entrer le mot de passe : </label>
     <input type="password" id="pswd">
     <input type="button" value="Soumettre" onclick="checkPswd();" />
-    </form> 
-    </center>
-
+    </form>
+    
   </div>
 </div>
 
